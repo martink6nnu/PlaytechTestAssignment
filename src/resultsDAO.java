@@ -30,7 +30,7 @@ public class resultsDAO {
     }
 
     public static void writeToFile() throws IOException {
-        FileWriter resultsFile = new FileWriter("src/Results.txt");
+        FileWriter resultsFile = new FileWriter("src/results.txt");
         BufferedWriter bufferedWriter = new BufferedWriter(resultsFile);
         bufferedWriter.write(legitimateUsers + " \n" + illegitimateUsers + "\n" + casinoChanges);
         bufferedWriter.close();
